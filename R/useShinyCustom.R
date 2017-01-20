@@ -56,6 +56,6 @@ makeScript <- function(sp, sd, np, nd, tp, td, te) {
                  "var customNumericDelay = ", nd, ";\n",
                  "var customTextPolicy = '", tp, "';\n",
                  "var customTextDelay = ", td, ";\n",
-                 "var customTriggeredEvent = ", te, ";\n")
+                 "var customTriggeredEvent = '", te, "';\n")
   text
 }

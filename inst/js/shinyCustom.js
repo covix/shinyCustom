@@ -13,7 +13,7 @@
     return $(scope).find('input.customSliderInput');
   },
     subscribe: function(el, callback) {
-    $(el).on(customEventTriggered + '.customSliderInputBinding update.customSliderInputBinding', function(event) {
+    $(el).on(customTriggeredEvent + '.customSliderInputBinding update.customSliderInputBinding', function(event) {
       callback(!$(el).data('updating') && !$(el).data('animating'));
     });
   },

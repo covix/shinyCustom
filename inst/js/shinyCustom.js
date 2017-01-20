@@ -14,7 +14,8 @@
   },
     subscribe: function(el, callback) {
     $(el).on(customTriggeredEvent + '.customSliderInputBinding update.customSliderInputBinding', function(event) {
-      callback(!$(el).data('updating') && !$(el).data('animating'));
+      // callback(!$(el).data('updating') && !$(el).data('animating'));
+      callback(true);
     });
   },
   unsubscribe: function(el) {
